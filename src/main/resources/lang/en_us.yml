@@ -1,0 +1,21 @@
+# EterVelocityBroadcast messages, MiniMessage format: https://docs.advntr.dev/minimessage/format
+# Palette tags (EterVelocityLib/config.yml > colors): <primary> <accent> <info> <error> <success>
+#   <info> = regular light gray text, <accent> = important words in orange.
+# A missing key falls back to the text bundled in the plugin: keep only the lines you change.
+
+broadcast:
+  usage: '<error>Usage: <accent>/broadcast \<message></accent> (MiniMessage allowed)'
+  format: "<primary><bold>Announcement</bold></primary> <dark_gray>» <white><message>"
+
+# Automatic announcements (one per id in config.yml > announcements.list), after the network prefix.
+announcements:
+  lobby: "<info>Lost? <accent><click:run_command:'/lobby'><hover:show_text:'<info>Click to go'>/lobby</hover></click></accent> takes you back to the lobby from any server."
+  servers: "<info>Pick your server with <accent><click:run_command:'/servers'>/servers</click></accent>, or by walking into a lobby portal."
+  ressource: "<info>Want to mine without ruining your base? <accent><click:run_command:'/ressource'>/ressource</click></accent>: a brand new world, where your job is stronger."
+  jobs: "<info>Jobs pay! Pick yours at its NPC and complete your <accent>daily quests</accent>."
+  homes: "<info><accent><click:run_command:'/homes'>/homes</click></accent> opens your homes menu, usable from the whole network."
+  rtp: "<info>Need space? <accent><click:run_command:'/rtp'>/rtp</click></accent> sends you to a quiet corner of the world."
+  daily: "<info>Don't forget <accent><click:run_command:'/daily'>/daily</click></accent>: 7 days in a row for the best reward!"
+  tpa: "<info>Join a friend wherever they are with <accent><click:suggest_command:'/tpa '>/tpa player</click></accent>, even on another server."
+  messages: "<info><accent>/msg</accent> and <accent>/r</accent> work across servers; <accent><click:run_command:'/chat'>/chat</click></accent> for your settings."
+  sidebar: "<info>Sidebar in the way? <accent><click:run_command:'/sb'>/sb</click></accent> hides it (and shows it again)."

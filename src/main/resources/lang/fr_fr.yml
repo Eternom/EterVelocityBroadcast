@@ -1,0 +1,21 @@
+# Messages d'EterVelocityBroadcast, format MiniMessage : https://docs.advntr.dev/minimessage/format
+# Balises de la palette (EterVelocityLib/config.yml > colors) : <primary> <accent> <info> <error> <success>
+#   <info> = texte courant gris clair, <accent> = mots importants en orange.
+# Une clé absente reprend le texte intégré au plugin : tu peux ne garder que les lignes que tu modifies.
+
+broadcast:
+  usage: '<error>Utilisation : <accent>/broadcast \<message></accent> (MiniMessage accepté)'
+  format: "<primary><bold>Annonce</bold></primary> <dark_gray>» <white><message>"
+
+# Annonces automatiques (une par identifiant de config.yml > announcements.list), précédées du préfixe du réseau.
+announcements:
+  lobby: "<info>Perdu ? <accent><click:run_command:'/lobby'><hover:show_text:'<info>Clic pour y aller'>/lobby</hover></click></accent> te ramène au lobby depuis n'importe quel serveur."
+  servers: "<info>Choisis ton serveur avec <accent><click:run_command:'/servers'>/servers</click></accent>, ou en entrant dans un portail du lobby."
+  ressource: "<info>Envie de miner sans abîmer ta base ? <accent><click:run_command:'/ressource'>/ressource</click></accent> : un monde tout neuf, et ton métier y est plus fort."
+  jobs: "<info>Les métiers paient ! Choisis le tien auprès de son PNJ et fais tes <accent>quêtes du jour</accent>."
+  homes: "<info><accent><click:run_command:'/homes'>/homes</click></accent> ouvre le menu de tes homes, utilisables depuis tout le réseau."
+  rtp: "<info>Besoin de place ? <accent><click:run_command:'/rtp'>/rtp</click></accent> t'envoie dans un coin tranquille du monde."
+  daily: "<info>N'oublie pas <accent><click:run_command:'/daily'>/daily</click></accent> : 7 jours d'affilée pour la meilleure récompense !"
+  tpa: "<info>Rejoins un ami où qu'il soit avec <accent><click:suggest_command:'/tpa '>/tpa pseudo</click></accent>, même sur un autre serveur."
+  messages: "<info><accent>/msg</accent> et <accent>/r</accent> marchent d'un serveur à l'autre ; <accent><click:run_command:'/chat'>/chat</click></accent> pour tes réglages."
+  sidebar: "<info>La sidebar te gêne ? <accent><click:run_command:'/sb'>/sb</click></accent> la masque (et la réaffiche)."

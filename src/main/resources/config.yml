@@ -1,0 +1,36 @@
+# ============================================================
+#  EterVelocityBroadcast (proxy) : les annonces du réseau
+# ============================================================
+#
+#  Annonces automatiques (astuces, Discord, événements, nouveautés...) envoyées à tout le réseau
+#  depuis le proxy, dans la langue de chaque joueur, et /broadcast (alias /bc) pour le staff
+#  (permission etervelocitybroadcast.broadcast).
+#  Préfixe et palette : config.yml d'EterVelocityLib. Toute modification nécessite un redémarrage du proxy.
+
+announcements:
+  # Une annonce toutes les N minutes (0 = aucune annonce automatique). Rien n'est envoyé si personne n'est connecté.
+  interval-minutes: 5
+
+  # Les annonces : identifiant -> serveurs visés. Le TEXTE de chacune est dans lang/ (announcements.<identifiant>),
+  # en MiniMessage : couleurs, <click:run_command:'/lobby'>commande cliquable</click>, liens...
+  # servers : débuts de noms de serveurs (dans velocity.toml) qui la reçoivent ; absent ou vide = tout le réseau.
+  # Ex : « lobby » vise lobby-1, lobby-2... (les lobbys de l'orchestrateur).
+  # Ordre mélangé, chaque annonce une fois par tour, jamais deux fois de suite.
+  # Pour en ajouter une : une ligne ici, et son texte dans lang/fr_fr.yml et lang/en_us.yml.
+  list:
+    lobby:
+      servers: [eter-survival, ressource]
+    servers:
+      servers: [lobby]
+    ressource:
+      servers: [lobby, eter-survival]
+    jobs:
+      servers: [lobby, eter-survival]
+    homes:
+      servers: [eter-survival]
+    rtp:
+      servers: [eter-survival]
+    daily: {}
+    tpa: {}
+    messages: {}
+    sidebar: {}
