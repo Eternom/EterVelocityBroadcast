@@ -9,6 +9,7 @@
 
 announcements:
   # Une annonce toutes les N minutes (0 = aucune annonce automatique). Rien n'est envoyé si personne n'est connecté.
+  # Plus il y a d'annonces dans la liste, plus chacune revient rarement (17 annonces à 5 min : chacune environ toutes les 1 h 25).
   interval-minutes: 5
 
   # Les annonces : identifiant -> serveurs visés. Le TEXTE de chacune est dans lang/ (announcements.<identifiant>),
@@ -34,3 +35,13 @@ announcements:
     tpa: {}
     messages: {}
     sidebar: {}
+    vote: {}
+    pass: {}
+    report: {}
+    discord: {}
+    clan:
+      servers: [eter-survival]
+    sleep:
+      servers: [eter-survival]
+    combat:
+      servers: [eter-survival]
