@@ -11,7 +11,7 @@ broadcast:
 announcements:
   lobby: "<info>Lost? <accent><click:run_command:'/lobby'><hover:show_text:'<info>Click to go'>/lobby</hover></click></accent> takes you back to the lobby from any server."
   servers: "<info>Pick your server with <accent><click:run_command:'/servers'>/servers</click></accent>, or by walking into a lobby portal."
-  ressource: "<info>Want to mine without ruining your base? <accent><click:run_command:'/ressource'>/ressource</click></accent>: a brand new world where your job gives you bonuses (the menu shows them)."
+  ressource: "<info>Want to mine without ruining your base? <accent><click:run_command:'/resource'>/resource</click></accent>: a brand new world where your job gives you bonuses (the menu shows them)."
   jobs: "<info>Jobs pay! Pick yours at its NPC in the lobby and complete your <accent>daily quests</accent>: it's the server's real income."
   homes: "<info><accent><click:run_command:'/homes'>/homes</click></accent> opens your homes menu, usable from the whole network."
   rtp: "<info>Need space? <accent><click:run_command:'/rtp'>/rtp</click></accent> sends you to a quiet corner of the world."

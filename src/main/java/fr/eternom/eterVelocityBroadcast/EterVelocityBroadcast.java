@@ -22,7 +22,7 @@ import java.time.Duration;
  * serveurs : une seule config, jamais d'annonce en double). Annonces automatiques dans la langue de chaque joueur
  * (astuces, Discord, événements...), et /broadcast pour le staff.
  */
-@Plugin(id = "etervelocitybroadcast", name = "EterVelocityBroadcast", version = "1.0.0", authors = {"NadTum"},
+@Plugin(id = "etervelocitybroadcast", name = "EterVelocityBroadcast", version = "1.1.1", authors = {"NadTum"},
         description = "Annonces du réseau : annonces automatiques et /broadcast",
         dependencies = {@Dependency(id = "etervelocitylib")})
 public final class EterVelocityBroadcast {
