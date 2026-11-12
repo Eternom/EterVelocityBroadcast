@@ -4,8 +4,11 @@
 # Une clé absente reprend le texte intégré au plugin : tu peux ne garder que les lignes que tu modifies.
 
 broadcast:
-  usage: '<error>Utilisation : <accent>/broadcast \<message></accent> (MiniMessage accepté)'
+  usage: '<error>Utilisation : <accent>/broadcast \<message></accent> (MiniMessage accepté) <dark_gray>·</dark_gray> <accent>/broadcast restart <minutes></accent>'
   format: "<primary><bold>Annonce</bold></primary> <dark_gray>» <white><message>"
+  restart: "<error><bold>Redémarrage</bold></error> <info>du réseau dans <accent><minutes> min</accent> : mets tes affaires à l'abri, tu pourras revenir juste après."
+  restart-title: "<error><bold>Redémarrage</bold>"
+  restart-scheduled: "<success>✔</success> <info>Redémarrage annoncé : dans <accent><minutes> min</accent>, rappels à 10, 5 et 1 min."
 
 # Annonces automatiques (une par identifiant de config.yml > announcements.list), précédées du préfixe du réseau.
 announcements:

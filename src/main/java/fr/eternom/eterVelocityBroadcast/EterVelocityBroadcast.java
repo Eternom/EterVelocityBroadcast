@@ -53,7 +53,7 @@ public final class EterVelocityBroadcast {
         }
         CommandManager commands = proxy.getCommandManager();
         commands.register(commands.metaBuilder("broadcast").aliases("bc").plugin(this).build(),
-                new BroadcastCommand(proxy, messages));
+                new BroadcastCommand(this, proxy, messages));
 
         Announcements announcements = Announcements.load(config, logger);
         int minutes = config.getInt("announcements.interval-minutes", 5);

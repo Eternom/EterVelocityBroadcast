@@ -4,8 +4,11 @@
 # A missing key falls back to the text bundled in the plugin: keep only the lines you change.
 
 broadcast:
-  usage: '<error>Usage: <accent>/broadcast \<message></accent> (MiniMessage allowed)'
+  usage: '<error>Usage: <accent>/broadcast \<message></accent> (MiniMessage allowed) <dark_gray>·</dark_gray> <accent>/broadcast restart <minutes></accent>'
   format: "<primary><bold>Announcement</bold></primary> <dark_gray>» <white><message>"
+  restart: "<error><bold>Restart</bold></error> <info>of the network in <accent><minutes> min</accent>: put your things somewhere safe, you can come back right after."
+  restart-title: "<error><bold>Restart</bold>"
+  restart-scheduled: "<success>✔</success> <info>Restart announced: in <accent><minutes> min</accent>, reminders at 10, 5 and 1 min."
 
 # Automatic announcements (one per id in config.yml > announcements.list), after the network prefix.
 announcements:
